@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 10, 2021 at 06:49 PM
+-- Generation Time: Sep 03, 2021 at 08:18 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -67,10 +67,10 @@ CREATE TABLE `brands` (
 --
 
 INSERT INTO `brands` (`id`, `brand`, `disabled`, `views`) VALUES
-(1, 'Johnsons', 0, 0),
-(2, 'Ronhill', 0, 0),
-(3, 'Albiro', 0, 0),
-(4, 'Toyota', 0, 0);
+(1, 'Local Shop', 0, 0),
+(2, 'MH Garments', 0, 0),
+(3, 'Unilever', 0, 0),
+(4, 'Ayaat Food', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -91,16 +91,15 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `category`, `disabled`, `parent`, `views`) VALUES
-(1, 'Food', 0, 0, 6),
+(1, 'Food', 0, 0, 7),
 (2, 'Drinks', 0, 0, 15),
-(4, 'Sodas', 1, 0, 1),
 (5, 'Clothes', 0, 0, 2),
 (6, 'Meat', 0, 0, 0),
 (7, 'Bags', 0, 0, 0),
-(8, 'Cars', 0, 0, 0),
-(9, 'Hats', 0, 5, 3),
 (10, 'Shirts', 0, 5, 6),
-(11, 'Goodies', 0, 0, 0);
+(11, 'Goodies', 0, 0, 0),
+(12, 'Snacks', 0, 0, 0),
+(13, 'Dairy', 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -164,13 +163,13 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `user_url`, `description`, `delivery_address`, `total`, `country`, `state`, `zip`, `tax`, `shipping`, `date`, `sessionid`, `home_phone`, `mobile_phone`) VALUES
-(6, 'IYHtfbbTBkpFExy', '', 'plot 1234 new road lusaka Lusaka', 9.99, 'Bangladesh', 'Dhaka', '1001', 0, 0, '2021-07-06 13:02:00', '4geg1pa308bcadbuqfhlvcvdjt', '4254545', '35324545'),
-(8, 'IYHtfbbTBkpFExy', '', 'aeefdfdfda dsadcvd', 9.99, 'Bangladesh', 'Dhaka', 'sfvdfv', 0, 0, '2021-07-09 13:32:51', '73d0bvfoijv78lfe8iau8q438i', 'dvdvcd', 'sdfvdvdv'),
-(9, 'IYHtfbbTBkpFExy', 'order 8', 'Zambia Lusaka', 20.99, 'Bangladesh', 'Khulna', '1223', 0, 0, '2021-07-09 13:51:21', '73d0bvfoijv78lfe8iau8q438i', 'burg', '0989787854'),
-(10, 'IYHtfbbTBkpFExy', 'order 10', 'wfgsfvgf sfvfv', 20.99, 'Bangladesh', 'Dhaka', 'sdfvvs', 0, 0, '2021-07-09 13:54:11', '73d0bvfoijv78lfe8iau8q438i', 'dfdfdf', 'dfdfd'),
-(11, 'IYHtfbbTBkpFExy', 'order 11', 'aefdf wdfd', 12.99, 'Bangladesh', 'Dhaka', 'dvfd', 0, 0, '2021-07-09 14:00:03', '73d0bvfoijv78lfe8iau8q438i', 'sdacv', 'dcfd'),
-(12, 'IYHtfbbTBkpFExy', 'order 12', 'aefdf wdfd', 12.99, 'Bangladesh', 'Chittagong', 'dvfd', 0, 0, '2021-07-09 14:02:57', '73d0bvfoijv78lfe8iau8q438i', 'sdacv', 'dcfd'),
-(13, 'IYHtfbbTBkpFExy', 'order 13', 'aefdf wdfd', 25.98, 'Bangladesh', 'Dhaka', 'dvfd', 0, 0, '2021-07-09 20:40:10', '73d0bvfoijv78lfe8iau8q438i', 'sdacv', 'dcfd');
+(6, 'IYHtfbbTBkpFExy', '', 'Dhanmondi, 8/A', 9.99, 'Bangladesh', 'Dhaka', '1001', 0, 0, '2021-07-06 13:02:00', '4geg1pa308bcadbuqfhlvcvdjt', '4254545', '35324545'),
+(8, 'IYHtfbbTBkpFExy', '', 'Mohammadpur, Town Hall', 9.99, 'Bangladesh', 'Dhaka', 'sfvdfv', 0, 0, '2021-07-09 13:32:51', '73d0bvfoijv78lfe8iau8q438i', 'dvdvcd', 'sdfvdvdv'),
+(9, 'IYHtfbbTBkpFExy', 'order 8', 'Khulna KachaBazr', 20.99, 'Bangladesh', 'Khulna', '1223', 0, 0, '2021-07-09 13:51:21', '73d0bvfoijv78lfe8iau8q438i', 'burg', '565255323'),
+(10, 'IYHtfbbTBkpFExy', 'order 10', 'Gulshan-2', 20.99, 'Bangladesh', 'Dhaka', 'sdfvvs', 0, 0, '2021-07-09 13:54:11', '73d0bvfoijv78lfe8iau8q438i', 'dfdfdf', 'dfdfd'),
+(11, 'IYHtfbbTBkpFExy', 'order 11', 'Rayer Bazar', 12.99, 'Bangladesh', 'Dhaka', 'dvfd', 0, 0, '2021-07-09 14:00:03', '73d0bvfoijv78lfe8iau8q438i', 'sdacv', 'dcfd'),
+(12, 'IYHtfbbTBkpFExy', 'order 12', 'Halisha, ctg', 12.99, 'Bangladesh', 'Chittagong', 'dvfd', 0, 0, '2021-07-09 14:02:57', '73d0bvfoijv78lfe8iau8q438i', 'sdacv', 'dcfd'),
+(13, 'IYHtfbbTBkpFExy', 'order 13', 'Basabo, Navana', 25.98, 'Bangladesh', 'Dhaka', 'dvfd', 0, 0, '2021-07-09 20:40:10', '73d0bvfoijv78lfe8iau8q438i', 'sdacv', 'dcfd');
 
 -- --------------------------------------------------------
 
@@ -275,11 +274,10 @@ INSERT INTO `products` (`id`, `user_url`, `description`, `category`, `brand`, `p
 (7, 'IYHtfbbTBkpFExy', 'Burger 250g With Drink', 1, 1, 9.99, 8, 'uploads/6f7bd4cc3677b6e4ce2aeb249bfa2c32.jpg', 'uploads/Burger.jpg', 'uploads/glenlivet-12.jpg', 'uploads/sogood-landing.jpg', '2021-03-16 19:36:12', 'burger-250g-with-drink'),
 (8, 'IYHtfbbTBkpFExy', 'Weet Bix 1.4 Kg', 1, 2, 20.99, 9, 'uploads/UT83WqLXMBXXXagOFbX9.jpg', 'uploads/getmedia_3dad7ab1-ce4b-40e7-b409-82013a7f2c4b_2020_Website_Title_WB.jpg width=760&height=460&ext=.jpg', 'uploads/banetti-foods.jpg', 'uploads/351396-01.jpg-1200Wx1200H.jpg', '2021-03-16 20:07:08', 'weet-bix-1-4-kg'),
 (9, 'IYHtfbbTBkpFExy', 'Milo Candy Bar', 1, 4, 12.99, 100, 'uploads/images.jpg', 'uploads/banetti-foods.jpg', '', '', '2021-03-16 20:16:54', 'milo-candy-bar'),
-(10, 'IYHtfbbTBkpFExy', 'Alcohol', 2, 2, 0.21, 6, 'uploads/yKqmWfrNPKYgOV4FLQHuzzi4iJnqaae09dQA2iedeffJCK7c9PSsVnSvjRIV.jpg', '', '', '', '2021-06-06 15:20:36', 'alcohol'),
 (11, 'IYHtfbbTBkpFExy', 'Meat Burger', 6, 3, 0.21, 6, 'uploads/mJVdNoskTywnobsA6A6mCaVCD7OJ8xxTl7cwV9Hth1O5Z0aiqDdA3stCYnQY.jpg', '', '', '', '2021-06-06 15:21:24', 'meat-burger'),
 (12, 'IYHtfbbTBkpFExy', 'Halo', 10, 3, 0.21, 6, 'uploads/UG8XjjVu7HTW1j6b4vfB9f2YqUVl0PbZ3WUXBU3LgXadugDVTCwua61u7Nrc.jpg', '', '', '', '2021-06-06 15:21:55', 'halo'),
 (13, 'IYHtfbbTBkpFExy', 'So Good', 2, 1, 0.21, 6, 'uploads/6evwk0NfONIp1SkN6Lzu0bprGHDUoJKA0RL3Fw6A6Epo6f9VQUAfB0YpN4w0.jpg', '', '', '', '2021-06-06 15:22:18', 'so-good'),
-(14, 'IYHtfbbTBkpFExy', 'Traditions', 11, 4, 0.21, 6, 'uploads/peCbYjssuVJWFRn5kS4w7AqZRimede6JLo2xRNAV264TTREC5abm9lpVQrfJ.jpg', '', '', '', '2021-06-06 15:24:01', 'tradition'),
+(14, 'IYHtfbbTBkpFExy', 'Traditions', 12, 4, 0.21, 6, 'uploads/peCbYjssuVJWFRn5kS4w7AqZRimede6JLo2xRNAV264TTREC5abm9lpVQrfJ.jpg', '', '', '', '2021-06-06 15:24:01', 'tradition'),
 (15, 'IYHtfbbTBkpFExy', 'Some Product', 1, 7, 0.08, 6, 'uploads/gfSXekdGkmQhkHE2GXDe29Cm2PN6MqrKFfLf5TK1rljqbO3Pfqopz5km5bKe.jpg', '', '', '', '2021-06-16 19:13:37', 'some-product');
 
 -- --------------------------------------------------------
@@ -381,7 +379,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `url_address`, `name`, `email`, `password`, `date`, `rank`) VALUES
 (4, 'oSTUyXyXyuxfdolYeGDNUY0BJvWPaej71G', 'Mehedi', 'mehedi@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2021-08-03 16:17:49', 'admin'),
-(5, 'olhw21QmaXHBKSBIYeaeKiAQSSk7noE9mJ3Gc01SqBcrdvaVkedNt5', 'shafin', 'shafin@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2021-08-06 17:10:27', 'customer');
+(5, 'olhw21QmaXHBKSBIYeaeKiAQSSk7noE9mJ3Gc01SqBcrdvaVkedNt5', 'shafin', 'shafin@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2021-08-06 17:10:27', 'customer'),
+(6, 'FheWIeYjJji8iQDUXtKBvcb6hcry1lo7FSGtgnV5L', 'jalal', 'jalal@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2021-09-03 07:22:54', 'customer');
 
 --
 -- Indexes for dumped tables
@@ -533,7 +532,7 @@ ALTER TABLE `brands`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `contact_us`
@@ -593,7 +592,7 @@ ALTER TABLE `states`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
