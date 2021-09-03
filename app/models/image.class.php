@@ -1,7 +1,7 @@
 <?php 
 
 class Image
-{
+{ 
 
 	public function generate_filename($length)
 	{

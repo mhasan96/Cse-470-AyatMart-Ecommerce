@@ -2,7 +2,7 @@
 
 Class Checkout extends Controller
 {
-
+ 
 	public function index()
 	{
 		

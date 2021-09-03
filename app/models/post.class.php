@@ -1,7 +1,7 @@
 <?php 
 
 Class Post
-{
+{ 
 
 	public function create($DATA,$FILES,$image_class = null)
 	{

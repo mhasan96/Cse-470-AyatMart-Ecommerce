@@ -8,7 +8,7 @@ Class Add_to_cart extends Controller
 	{
 		$this->set_redirect();
 		
-		$id = esc($id);
+		$id = esc($id); 
 		$DB = Database::newInstance();
 
 		$ROWS = $DB->read("select * from products where id = :id limit 1",["id"=>$id]);

@@ -7,4 +7,4 @@ include "../app/core/database.php";
 include "../app/core/setting.class.php";
 include "../app/core/page.class.php";
 include "../app/core/search.class.php";
-include "../app/core/app.php";
+include "../app/core/app.php"; 

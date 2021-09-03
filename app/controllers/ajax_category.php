@@ -2,7 +2,7 @@
 
 Class Ajax_category extends Controller
 {
-
+ 
 	public function index()
 	{
 		$_SESSION['error'] = "";

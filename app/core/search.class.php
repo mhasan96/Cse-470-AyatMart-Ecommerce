@@ -5,7 +5,7 @@
  * search for stuff
  */
 class Search
-{
+{ 
 	
 	function __construct()
 	{

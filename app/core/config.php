@@ -1,7 +1,7 @@
 <?php 
 
 define("WEBSITE_TITLE", 'MY SHOP');
-
+ 
 //database name
 if($_SERVER['SERVER_NAME'] == "localhost")
 {

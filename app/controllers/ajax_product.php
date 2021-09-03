@@ -2,7 +2,7 @@
 
 Class Ajax_product extends Controller
 {
-
+ 
 	public function index()
 	{
 		

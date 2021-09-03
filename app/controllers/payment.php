@@ -44,5 +44,5 @@ Class Payment extends Controller
  		
 	}
 
-
+ 
 }

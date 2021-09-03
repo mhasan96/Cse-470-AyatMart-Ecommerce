@@ -2,7 +2,7 @@
 
 Class Ajax_cart extends Controller
 {
-
+ 
 	public function index()
 	{
 

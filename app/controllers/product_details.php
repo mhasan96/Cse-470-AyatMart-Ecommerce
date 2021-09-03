@@ -2,7 +2,7 @@
 
 Class Product_details extends Controller
 {
-
+ 
 	public function index($slag)
 	{
 		$slag = esc($slag);

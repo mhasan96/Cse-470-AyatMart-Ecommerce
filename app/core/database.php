@@ -2,7 +2,7 @@
 
 Class Database
 {
-
+ 
 	/*
 	*
 	* This is the database class

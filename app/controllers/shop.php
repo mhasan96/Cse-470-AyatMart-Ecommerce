@@ -21,7 +21,7 @@ Class Shop extends Controller
 			
 			$search = true;
 		}
-
+ 
 		$User = $this->load_model('User');
 		$image_class = $this->load_model('Image');
 		$user_data = $User->check_login();

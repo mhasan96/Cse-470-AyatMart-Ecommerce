@@ -4,7 +4,7 @@ Class Profile extends Controller
 {
 
 	public function index($url_address = null)
-	{
+	{ 
 		
 		$User = $this->load_model('User');
 		$Order = $this->load_model('Order');

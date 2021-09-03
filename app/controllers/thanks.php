@@ -2,7 +2,7 @@
 
 Class Thanks extends Controller
 {
-
+ 
 	public function index()
 	{
 		$data['page_title'] = "Thanks";

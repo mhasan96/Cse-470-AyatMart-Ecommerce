@@ -1,6 +1,6 @@
 <?php 
 
-
+ 
 Class Countries{
 
 	public function get_countries(){

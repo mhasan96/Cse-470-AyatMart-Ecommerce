@@ -1,6 +1,6 @@
 <?php 
 
-Class User 
+Class User  
 {
 	private $error = "";
 

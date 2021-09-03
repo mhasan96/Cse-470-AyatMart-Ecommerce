@@ -1,7 +1,7 @@
 <?php 
 
 Class Admin extends Controller
-{
+{ 
 
 	public function index()
 	{

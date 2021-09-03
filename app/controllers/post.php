@@ -1,7 +1,7 @@
 <?php 
 
 Class Post extends Controller
-{
+{ 
 
 	public function index($url_address = '')
 	{

@@ -1,7 +1,7 @@
 <?php 
 
 Class Slider
-{
+{ 
 
 	private $error = "";
 

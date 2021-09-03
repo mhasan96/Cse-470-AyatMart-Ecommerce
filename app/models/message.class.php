@@ -1,7 +1,7 @@
 <?php 
 
 Class Message
-{
+{ 
 
 	protected $error = array();
 	public function create($DATA)

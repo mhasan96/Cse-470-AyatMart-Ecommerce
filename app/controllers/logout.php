@@ -12,4 +12,4 @@ Class Logout extends Controller
 	}
 
 
-}
+} 

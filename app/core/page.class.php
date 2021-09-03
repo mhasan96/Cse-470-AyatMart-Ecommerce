@@ -3,7 +3,7 @@
 /**
  * for pagination
  */
-class Page
+class Page 
 {
 
 	public static function get_offset($limit)

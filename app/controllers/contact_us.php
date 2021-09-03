@@ -1,7 +1,7 @@
 <?php 
 
 Class Contact_us extends Controller
-{
+{ 
 
 	public function index()
 	{

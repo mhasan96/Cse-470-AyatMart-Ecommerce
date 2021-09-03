@@ -2,7 +2,7 @@
 
 Class Blog extends Controller
 {
-
+ 
 	public function index()
 	{
 		//pagination formula

@@ -2,7 +2,7 @@
 
 Class Cart extends Controller
 {
-
+ 
 	public function index()
 	{
 		
