@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Models;
 /** @test */
 class UserTest extends \PHPUnit\Framework\TestCase{
     
